@@ -1,0 +1,102 @@
+.movie-card{
+    figure{
+      margin-bottom: 6px;
+      display: block;
+      position: relative;
+      overflow: hidden;
+      display: table;
+      
+      figcaption{
+        
+        display: none;
+        
+        .meta-details{
+          background: rgba(0,0,0,0.5);
+          height: 100%;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          top: 0;
+          left: 0;
+          right: 0;
+          text-align: center;
+          color: white;
+          border: 0.3rem solid red;
+          border-radius: 0.25rem;
+  
+          i{
+            font-size: 20px;
+            color: yellow;
+          }
+  
+          h4{
+            font-size: 15px;
+  
+            p{
+              margin-bottom: 0;
+            }
+          }
+        }
+        
+      }
+      
+    }
+  }
+  
+  .movie-info{
+     
+    padding-left: 5px;
+    margin-bottom: 10px;
+    
+    a{
+      color: #222;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      transition: 0.2s color;
+      
+      &:hover{
+        color: #777;
+      }
+    }
+    
+    .movie-year{
+      font-size: 12px;
+    }
+  }
+  .search {
+    position: relative;
+    display: flex;
+    float: right;
+  }
+  
+  .searchTerm {
+    border: 3px solid #ddd;
+    border-right: none;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  
+  
+  
+  .searchButton {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    background: #ddd;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .title {
+      float: left;
+      position: relative;
+  }
+  
+  
+  
