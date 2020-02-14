@@ -1,0 +1,29 @@
+<div class="container mt-4">
+    <div class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search by name or id" aria-label="Search" [(ngModel)]="search">
+      <button class="btn btn-outline-success my-2 my-sm-0 distance" type="submit" (click)="search_movie()">Search</button>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="toggleDisplay()">Advance Search</button>
+    </div>
+    <div class="form-inline my-2 my-lg-0 centerdiv" [hidden]="isShow"> 
+      <p>Filter by Range Date</p>
+      Start Date: <input class="form-control mr-sm-2" type="date" placeholder="Start date" aria-label="Search" [(ngModel)]="startDate">
+      Finish Date: <input class="form-control mr-sm-2" type="date" placeholder="Finish date" aria-label="Search" [(ngModel)]="finishDate">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="search_movie_by_date()">Search</button>
+    </div>
+    <div class="row">
+      
+      <article class="col-lg-3 col-md-3 col-sm-6 col-6" *ngFor= "let movie of movies"> 
+        <a href="" class="movie-card">
+          <figure class="movie-figure">
+            <img [src]="movie.porter_path" alt="" class="img-thumbnail" width="210" height="315">
+          </figure>
+          <div class="movie-info">
+          <a href="">{{movie.title}}</a>
+          <div class="movie-year text-muted">{{movie.release_date}}</div>
+          </div>
+        </a>
+      </article>
+      
+    </div>
+    
+  </div>
