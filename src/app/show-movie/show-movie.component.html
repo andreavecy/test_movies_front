@@ -1,0 +1,16 @@
+<div class="row">
+    <article class="col-lg-6 col-md-6 col-sm-6 col-6 centerdiv"> 
+      <div class="movie-card">
+        <figure class="centerdiv" style="width:'210px'">
+          <img [src]="movie.porter_path" alt="" class="img-thumbnail" width="210" height="315">
+        </figure>
+        <div>
+            <label >{{movie.title}}</label>
+            <div class=""><label>Date: </label> {{movie.release_date}}</div>
+            <div class=""><label>Overview: </label> {{movie.movie_overview}}</div>
+            <div class=""><label>Votes: </label> {{movie.movie_count}}</div>
+        </div>
+    </div>
+    </article>
+    
+  </div>

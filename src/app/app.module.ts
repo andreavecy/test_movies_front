@@ -7,11 +7,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CreateMovieComponent } from './create-movie/create-movie.component';
 import { MoviesComponent } from './movies/movies.component';
+import { ShowMovieComponent } from './show-movie/show-movie.component';
 @NgModule({
   declarations: [
     AppComponent,
     CreateMovieComponent,
-    MoviesComponent
+    MoviesComponent,
+    ShowMovieComponent
   ],
   imports: [
     BrowserModule,

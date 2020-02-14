@@ -1,40 +1,37 @@
 <div class="container">
 	<div class="row">
-		<h2>Create your snippet's HTML, CSS and Javascript in the editor tabs</h2>
+		<h2>Create Movie</h2>
 	</div>
-    <form action="#">
         <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-6">
                     <div class="form-group form-group-sm">
-                        <label for="firstname" class="control-label">Firstname1</label>
-                        <input type="text" class="form-control" id="firstname" placeholder="Firstname">
+                        <label class="control-label">Title</label>
+                        <input type="text" class="form-control" id="title" placeholder="Title" [(ngModel)]="title">
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6">
                     <div class="form-group">
-                        <label for="lastname" class="control-label">Last Name2</label>
-                        <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                        <label class="control-label">Poster Path</label>
+                        <input type="text" class="form-control" id="poster_path" placeholder="Poster Path" [(ngModel)]="posterPath">
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6">
                     <div class="form-group">
-                        <label for="lastname" class="control-label">Last Name3</label>
-                        <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                        <label class="control-label">Release Date</label>
+                        <input type="date" class="form-control" id="date" [(ngModel)]="releaseDate">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label">Movie Overview</label>
+                        <textarea class="form-control" id="overview" placeholder="Movie Overview" [(ngModel)]="movieOverview"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                       <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="createMovie()">Create</button>
                     </div>
                 </div>
         </div>
-        <div class="row">
-             <div class="col-xs-3">
-                    <textarea class="form-control"></textarea>
-                </div>
-        </div>
-        <div class="row">
-             <div class="col-xs-3">
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </div>
-        </div>
-    </form>
-
-
-
+        
 </div>

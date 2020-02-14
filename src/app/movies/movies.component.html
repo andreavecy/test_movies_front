@@ -18,7 +18,7 @@
             <img [src]="movie.porter_path" alt="" class="img-thumbnail" width="210" height="315">
           </figure>
           <div class="movie-info">
-          <a href="">{{movie.title}}</a>
+          <a [routerLink]="['/show', movie.id]" routerLinkActive="active">{{movie.title}}</a>
           <div class="movie-year text-muted">{{movie.release_date}}</div>
           </div>
         </a>
